@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/efano/NZ-caves/issues"
   },
-  "homepage": "https://github.com/efano/NZ-caves#readme"
+  "homepage": "https://github.com/efano/NZ-caves#readme",
+  "dependencies": {
+    "chalk": "^2.4.2"
+  }
 }
