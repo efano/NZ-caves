@@ -4,7 +4,7 @@
 
 ### Steps
 
-..* Two shapefiles were used to create this project. The New Zealand regions shapefile, statsnzregional-council-2015-v1-00-clipped-SHP, was downloaded from: [Stats NZ](https://datafinder.stats.govt.nz/). The caves shapfile, Caves.shp, was obtained from [ArcGIS Hub](https://hub.arcgis.com/datasets/eaglelabs::caves)
+..* Two shapefiles were used to create this project. The New Zealand regions shapefile, statsnzregional-council-2015-v1-00-clipped-SHP, was downloaded from: [Stats NZ](https://datafinder.stats.govt.nz/search/?q=statsnzregional-council-2015-v1-00-clipped-SHP). The caves shapfile, Caves.shp, was obtained from [ArcGIS Hub](https://hub.arcgis.com/datasets/eaglelabs::caves)
 
 ..* Created a remote [github repository](https://github.com/efano/NZ-caves). This repository was then cloned down locally, and the npm init was used to create the package.json file
 
