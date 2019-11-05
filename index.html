@@ -128,7 +128,7 @@
 
   <script>
     const options = {
-      center: [-41.0, 171.0],
+      center: [-41.0, 172.0],
       zoom: 6,
       zoomControl: false
     }
@@ -219,7 +219,7 @@
             });
             // zoom to layer on polygon click
             layer.on('click', function () {
-              map.fitBounds(this.getBounds());
+              map.flyToBounds(this.getBounds());
             });
           })
         }
@@ -283,7 +283,7 @@
         regionsLayerGroup.eachLayer(function (layer) {
           // if the region id matches the one we're mousing over
           if (layer.feature.properties.REGC2015_C === regionNum) {
-            map.fitBounds(layer.getBounds());
+            map.flyToBounds(layer.getBounds());
           };
         });
       };
