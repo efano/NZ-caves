@@ -14,4 +14,5 @@
 
 * The Node script, scripts/get-color-scheme.js was created to automatically pull the Bold color scheme from the cartocolors.json, and write the to the data/boldcolors.json which was then loaded and used in the project.
 
-* Once all data was processed, the index.html was then developed to completion.
+* Once all data was processed, the index.html was then developed to completion. To view the final results of this project click [here](https://efano.github.io/invasive-water-buttercup/).
+
