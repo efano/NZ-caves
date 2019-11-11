@@ -148,9 +148,8 @@
 
   <script>
     const options = {
-      center: [-41.0, 172.0],
-      zoom: 6,
-      zoomControl: false
+      zoomControl: false,
+      zoomSnap: .1
     }
 
     const map = L.map('map', options);
@@ -184,9 +183,6 @@
 
     function drawMap(data) {
       // function is called when Promise is fulfilled and data is ready
-
-      // inspect array of data
-      console.log(data);
 
       // pull out separate data arrays and assign to variables
       const regions = data[0];
@@ -239,7 +235,9 @@
         }
       }).addTo(map);
 
-      // console.log(regions.features[0].properties.REGC2015_1);
+      map.fitBounds(regionsLayerGroup.getBounds(), {
+        padding: [18, 18]
+      })
 
       // to alphabetize legend list, create empty container for legend region names
       const legendRegions = [];
