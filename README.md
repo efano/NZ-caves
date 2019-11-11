@@ -12,7 +12,7 @@
 
 * The shapefile, regional-council-2015-v1-00-clipped.shp, was simplified to 3% of its original geometry (percentage determined using Mapshaper.org), reprojected to WGS84, filtered fields to the REGC2015_1 and REGC2015_C fields, and converted to GeoJSON using the command $: `mapshaper regional-council-2015-v1-00-clipped.shp -filter-fields REGC2015_1,REGC2015_C -simplify dp 3% -o precision=.000001 format=geojson ../data/regions.json`. The Chatman Islands record was removed from the original shapefile using QGIS because its coordinates crossed over the International Data Line and therefore would not display at the zoom level. The REGC2015_C field was added using QGIS.
 
-* The Node script, scripts/get-color-scheme.js was created to automatically pull the Bold color scheme from the cartocolors.json, and write the to the data/boldcolors.json which was then loaded and used in the project.
+* The Node script, scripts/get-color-scheme.js was created to automatically pull the **bold** color scheme from the cartocolors.json, and write the to the data/boldcolors.json which was then loaded and used in the project.
 
-* Once all data was processed, the index.html was then developed to completion. To view the final results of this project click [here](https://efano.github.io/invasive-water-buttercup/).
+* Once all data was processed, the index.html was then developed to completion. To view the final results of this project see [the map of invasive water buttercup](https://efano.github.io/invasive-water-buttercup/).
 
