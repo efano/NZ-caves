@@ -213,7 +213,7 @@
               fillOpacity: .5,
               weight: 2
             }).bringToFront();
-            // select the cooresponding list item
+            // select the corresponding list item
             // and add the highlight class to make bold
             $('#region-' + feature.properties.REGC2015_C).addClass('highlight');
             // when mousing out
@@ -235,6 +235,7 @@
         }
       }).addTo(map);
 
+      // fit map bounds to feature extent
       map.fitBounds(regionsLayerGroup.getBounds(), {
         padding: [18, 18]
       })
